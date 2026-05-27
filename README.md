@@ -1,71 +1,29 @@
-# Dev Portfolio
+# Minh Nguyen Anh Vu - Developer Portfolio
 
-A responsive personal developer portfolio built with semantic HTML5 and CSS Grid — no frameworks, no build tools, no dependencies.
+This is my personal developer portfolio. It introduces who I am, shares my software projects, and provides links to my resume, GitHub, LinkedIn, email, and phone contact.
 
-## Features
+## View Locally
 
-- Sticky frosted-glass navigation with active section highlighting
-- Smooth scroll to sections
-- Scroll-reveal animations (fade in on scroll)
-- CSS Grid project showcase
-- Mobile-responsive with hamburger menu
-- Dark theme with CSS custom properties
+Open the portfolio by double-clicking:
 
-## File Structure
-
-```
-profiolo/
-├── index.html
-├── css/
-│   ├── reset.css        — base normalize
-│   ├── variables.css    — colors, spacing, fonts (edit here to retheme)
-│   ├── layout.css       — container, shared buttons, footer, reveal animation
-│   ├── nav.css          — sticky nav + hamburger
-│   ├── hero.css         — landing section
-│   ├── about.css        — two-column about + skills grid
-│   ├── projects.css     — project card grid
-│   ├── contact.css      — contact block + social links
-│   └── responsive.css   — tablet + mobile breakpoints
-└── js/
-    ├── projects.js      — project data + card renderer
-    ├── nav.js           — scroll behavior, active link, hamburger toggle
-    ├── smooth-scroll.js — offset-aware smooth anchor scrolling
-    └── scroll-reveal.js — IntersectionObserver fade-in
+```text
+index.html
 ```
 
-## How to Run
+You can also right-click `index.html` and choose **Open with** your browser.
 
-Open `index.html` in any browser — no server or install required.
+## Best Way To Share It
 
-## Customization
+For LinkedIn, the best option is to publish this portfolio with **GitHub Pages**. That gives you a public website link you can add to your LinkedIn profile, resume, and GitHub profile.
 
-**Your info** — edit `index.html` directly:
-- Replace `Your Name` (appears in the hero, footer, and page title)
-- Replace `[City]` in the about section
-- Replace `hello@example.com` with your actual email
-- Update the GitHub / LinkedIn / Twitter links in the contact section
-- Swap `resume.pdf` for your actual resume file (place it next to `index.html`)
+Basic GitHub Pages steps:
 
-**Projects** — edit the `PROJECTS` array at the top of `js/projects.js`:
-```js
-{
-  icon: '🚀',        // any emoji
-  title: 'My App',
-  description: 'What it does.',
-  tags: ['React', 'Node.js'],
-  github: 'https://github.com/you/repo',
-  live: 'https://myapp.com',  // set to null if no live link
-}
-```
+1. Push this portfolio folder to a public GitHub repository.
+2. Open the repository on GitHub.
+3. Go to **Settings** -> **Pages**.
+4. Under **Build and deployment**, choose **Deploy from a branch**.
+5. Select the main branch and the root folder.
+6. Save, then wait for GitHub to create the live portfolio URL.
 
-**Colors / fonts** — all design tokens live in `css/variables.css`. Change `--color-accent` to repaint the entire accent color across every section.
+Once it is live, use that GitHub Pages URL on LinkedIn.
 
-**Photo** — replace the emoji avatar in `index.html` with a real image:
-```html
-<!-- Find this in index.html and swap it out -->
-<div class="about__avatar">&#128100;</div>
-
-<!-- Replace with: -->
-<img class="about__avatar" src="photo.jpg" alt="Your Name">
-```
-Then add `object-fit: cover;` to `.about__avatar` in `css/about.css`.
