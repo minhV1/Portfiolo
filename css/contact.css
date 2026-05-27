@@ -1,0 +1,55 @@
+.contact__inner {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact .section-label,
+.contact .section-title {
+  /* Override left-align from layout.css for the centered contact block */
+  text-align: center;
+}
+
+.contact__description {
+  font-size: 1.05rem;
+  color: var(--color-text-muted);
+  line-height: 1.8;
+  margin-bottom: var(--space-lg);
+}
+
+.contact__email-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  font-family: var(--font-mono);
+  color: var(--color-accent);
+  border: 1px solid var(--color-accent);
+  padding: 1rem 2.25rem;
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-lg);
+  transition: all var(--transition);
+}
+
+.contact__email-btn:hover {
+  background: rgba(88, 166, 255, 0.1);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(88, 166, 255, 0.2);
+}
+
+.contact__socials {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-md);
+}
+
+.social-link {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  transition: color var(--transition);
+}
+
+.social-link:hover {
+  color: var(--color-accent);
+}

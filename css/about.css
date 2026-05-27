@@ -1,0 +1,67 @@
+.about__grid {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: var(--space-xl);
+  align-items: start;
+}
+
+.about__text p {
+  color: var(--color-text-muted);
+  line-height: 1.8;
+  font-size: 1.05rem;
+  margin-bottom: var(--space-sm);
+}
+
+.about__skills-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-top: var(--space-md);
+  margin-bottom: var(--space-sm);
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+}
+
+.skill-item {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.skill-item::before {
+  content: '▸';
+  color: var(--color-accent);
+  font-size: 0.7rem;
+  flex-shrink: 0;
+}
+
+/* Avatar placeholder — swap for a real <img> when ready */
+.about__image-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.about__avatar {
+  width: 280px;
+  height: 280px;
+  border-radius: var(--radius-lg);
+  border: 2px solid var(--color-border);
+  background: var(--color-surface);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+  color: var(--color-text-subtle);
+  transition: border-color var(--transition);
+}
+
+.about__avatar:hover {
+  border-color: var(--color-accent);
+}
